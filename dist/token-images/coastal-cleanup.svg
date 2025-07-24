@@ -1,0 +1,106 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Beach scene -->
+  <defs>
+    <linearGradient id="beachGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="50%" style="stop-color:#4682B4"/>
+      <stop offset="100%" style="stop-color:#2E8B57"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="200" fill="url(#beachGradient)"/>
+  
+  <!-- Ocean waves -->
+  <path d="M0 120 Q100 110 200 120 T400 120 L400 200 L0 200 Z" fill="#4682B4" opacity="0.7"/>
+  <path d="M0 140 Q150 130 300 140 T400 140 L400 200 L0 200 Z" fill="#5F9EA0" opacity="0.5"/>
+  
+  <!-- Beach sand -->
+  <rect x="0" y="160" width="400" height="40" fill="#F4A460"/>
+  
+  <!-- Cleanup volunteers -->
+  <circle cx="120" cy="135" r="8" fill="#4A4A4A"/>
+  <rect x="115" y="143" width="10" height="15" fill="#FF6347"/>
+  <rect x="110" y="150" width="8" height="12" fill="#4169E1"/>
+  <rect x="122" y="150" width="8" height="12" fill="#4169E1"/>
+  
+  <circle cx="180" cy="140" r="8" fill="#4A4A4A"/>
+  <rect x="175" y="148" width="10" height="15" fill="#32CD32"/>
+  <rect x="170" y="155" width="8" height="12" fill="#8B4513"/>
+  <rect x="182" y="155" width="8" height="12" fill="#8B4513"/>
+  
+  <circle cx="250" cy="138" r="8" fill="#4A4A4A"/>
+  <rect x="245" y="146" width="10" height="15" fill="#FF69B4"/>
+  <rect x="240" y="153" width="8" height="12" fill="#000080"/>
+  <rect x="252" y="153" width="8" height="12" fill="#000080"/>
+  
+  <!-- Trash bags -->
+  <ellipse cx="80" cy="155" rx="12" ry="15" fill="#2F4F4F"/>
+  <rect x="75" y="145" width="10" height="8" fill="#2F4F4F"/>
+  
+  <ellipse cx="300" cy="158" rx="10" ry="12" fill="#2F4F4F"/>
+  <rect x="296" y="150" width="8" height="6" fill="#2F4F4F"/>
+  
+  <ellipse cx="200" cy="172" rx="8" ry="10" fill="#2F4F4F"/>
+  <rect x="197" y="165" width="6" height="5" fill="#2F4F4F"/>
+  
+  <!-- Scattered litter being collected -->
+  <rect x="150" y="165" width="8" height="3" fill="#FF4500" transform="rotate(15 154 166)"/>
+  <circle cx="220" cy="168" r="2" fill="#FF1493"/>
+  <rect x="280" y="166" width="6" height="2" fill="#00CED1" transform="rotate(-20 283 167)"/>
+  <rect x="160" y="170" width="4" height="2" fill="#FFD700" transform="rotate(10 162 171)"/>
+  
+  <!-- Cleanup tools -->
+  <rect x="160" y="125" width="2" height="25" fill="#8B4513"/>
+  <rect x="155" y="120" width="12" height="8" fill="#D2691E"/>
+  
+  <rect x="260" y="130" width="2" height="20" fill="#8B4513"/>
+  <rect x="255" y="125" width="12" height="8" fill="#D2691E"/>
+  
+  <!-- Wildlife -->
+  <ellipse cx="350" cy="100" rx="12" ry="6" fill="#FF7F50"/>
+  <path d="M362 100 L370 95 L370 105 Z" fill="#FF7F50"/>
+  
+  <ellipse cx="320" cy="110" rx="10" ry="5" fill="#FF7F50"/>
+  <path d="M330 110 L336 106 L336 114 Z" fill="#FF7F50"/>
+  
+  <!-- Seagulls -->
+  <path d="M50 40 Q55 35 60 40" stroke="#FFF" stroke-width="2" fill="none"/>
+  <path d="M45 45 Q50 40 55 45" stroke="#FFF" stroke-width="2" fill="none"/>
+  <path d="M350 35 Q355 30 360 35" stroke="#FFF" stroke-width="2" fill="none"/>
+  
+  <!-- Sun -->
+  <circle cx="350" cy="50" r="18" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Live stream camera on tripod -->
+  <rect x="330" y="155" width="25" height="15" fill="#2C3E50"/>
+  <rect x="340" y="140" width="3" height="25" fill="#2C3E50"/>
+  <rect x="335" y="165" width="3" height="10" fill="#2C3E50" transform="rotate(-15 336 170)"/>
+  <rect x="348" y="165" width="3" height="10" fill="#2C3E50" transform="rotate(15 349 170)"/>
+  <circle cx="342" cy="162" r="4" fill="#000"/>
+  <circle cx="342" cy="162" r="2" fill="#FF0000"/>
+  
+  <!-- Coordinator with clipboard -->
+  <circle cx="60" cy="125" r="8" fill="#4A4A4A"/>
+  <rect x="55" y="133" width="10" height="15" fill="#228B22"/>
+  <rect x="50" y="140" width="8" height="12" fill="#000080"/>
+  <rect x="62" y="140" width="8" height="12" fill="#000080"/>
+  <rect x="45" y="125" width="6" height="8" fill="#F5F5DC"/>
+  
+  <!-- Live indicator -->
+  <rect x="50" y="50" width="80" height="25" fill="rgba(255,0,0,0.8)" rx="5"/>
+  <text x="60" y="60" font-family="Arial" font-size="10" fill="white" font-weight="bold">LIVE</text>
+  <text x="55" y="70" font-family="Arial" font-size="8" fill="white">Beach Cleanup</text>
+  
+  <!-- Viewer count -->
+  <circle cx="200" cy="180" r="3" fill="#FF0000"/>
+  <text x="208" y="185" font-family="Arial" font-size="8" fill="#2C3E50">1,560 viewers</text>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.6)"/>
+  <text x="20" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#4682B4">
+    Coastal Cleanup Crew
+  </text>
+  <text x="20" y="40" font-family="Arial" font-size="12" fill="#E5E5E5">
+    Malibu Beach Cleanup - Live Stream
+  </text>
+</svg>

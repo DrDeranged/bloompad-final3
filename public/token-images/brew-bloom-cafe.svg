@@ -1,0 +1,83 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Warm café interior -->
+  <defs>
+    <linearGradient id="cafeWarm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3A2317"/>
+      <stop offset="50%" style="stop-color:#2D1810"/>
+      <stop offset="100%" style="stop-color:#1F0E08"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="200" fill="url(#cafeWarm)"/>
+  
+  <!-- Café interior - Tables and seating -->
+  <rect x="50" y="140" width="300" height="60" fill="#8B4513" opacity="0.7"/>
+  
+  <!-- Tables -->
+  <ellipse cx="120" cy="120" rx="25" ry="15" fill="#D2691E"/>
+  <ellipse cx="200" cy="110" rx="30" ry="18" fill="#D2691E"/>
+  <ellipse cx="280" cy="125" rx="25" ry="15" fill="#D2691E"/>
+  
+  <!-- Coffee cups on tables -->
+  <ellipse cx="120" cy="115" rx="8" ry="5" fill="#8B4513"/>
+  <ellipse cx="200" cy="105" rx="8" ry="5" fill="#8B4513"/>
+  <ellipse cx="280" cy="120" rx="8" ry="5" fill="#8B4513"/>
+  
+  <!-- Steam from coffee -->
+  <path d="M115 110 Q118 100 115 95" stroke="#E5E5E5" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M125 108 Q128 98 125 93" stroke="#E5E5E5" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M195 100 Q198 90 195 85" stroke="#E5E5E5" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M205 102 Q208 92 205 87" stroke="#E5E5E5" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- People/customers silhouettes -->
+  <circle cx="120" cy="80" r="12" fill="#4A4A4A"/>
+  <rect x="115" y="92" width="10" height="20" fill="#4A4A4A"/>
+  
+  <circle cx="200" cy="75" r="12" fill="#4A4A4A"/>
+  <rect x="195" y="87" width="10" height="18" fill="#4A4A4A"/>
+  
+  <circle cx="280" cy="85" r="12" fill="#4A4A4A"/>
+  <rect x="275" y="97" width="10" height="25" fill="#4A4A4A"/>
+  
+  <!-- Coffee machine/counter -->
+  <rect x="320" y="90" width="60" height="40" fill="#654321"/>
+  <rect x="325" y="95" width="50" height="30" fill="#8B4513"/>
+  <circle cx="340" cy="105" r="4" fill="#D2691E"/>
+  <circle cx="360" cy="105" r="4" fill="#D2691E"/>
+  
+  <!-- Menu board -->
+  <rect x="60" y="50" width="80" height="60" fill="#2F4F4F"/>
+  <text x="70" y="65" font-family="serif" font-size="8" fill="#D2691E">MENU</text>
+  <text x="65" y="75" font-family="serif" font-size="6" fill="#E5E5E5">Latte - $4</text>
+  <text x="65" y="83" font-family="serif" font-size="6" fill="#E5E5E5">Cappuccino - $4</text>
+  <text x="65" y="91" font-family="serif" font-size="6" fill="#E5E5E5">Americano - $3</text>
+  <text x="65" y="99" font-family="serif" font-size="6" fill="#D2691E">Token Holder 10% OFF</text>
+  
+  <!-- Hanging lights -->
+  <circle cx="150" cy="35" r="8" fill="#FFD700" opacity="0.8"/>
+  <circle cx="250" cy="30" r="8" fill="#FFD700" opacity="0.8"/>
+  <line x1="150" y1="27" x2="150" y2="15" stroke="#4A4A4A" stroke-width="1"/>
+  <line x1="250" y1="22" x2="250" y2="10" stroke="#4A4A4A" stroke-width="1"/>
+  
+  <!-- Window with natural light -->
+  <rect x="0" y="40" width="30" height="80" fill="#87CEEB" opacity="0.3"/>
+  <rect x="5" y="45" width="20" height="70" fill="#E0F6FF" opacity="0.4"/>
+  
+  <!-- Live stream indicators -->
+  <rect x="300" y="40" width="80" height="30" fill="rgba(255,0,0,0.8)" rx="5"/>
+  <text x="310" y="52" font-family="Arial" font-size="10" fill="white" font-weight="bold">LIVE</text>
+  <text x="305" y="63" font-family="Arial" font-size="8" fill="white">Coffee Chat</text>
+  
+  <!-- Viewer count -->
+  <circle cx="340" cy="170" r="3" fill="#FF0000"/>
+  <text x="348" y="175" font-family="Arial" font-size="8" fill="#E5E5E5">342 viewers</text>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.7)"/>
+  <text x="20" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#D2691E">
+    Brew &amp; Bloom Café
+  </text>
+  <text x="20" y="40" font-family="Arial" font-size="12" fill="#E5E5E5">
+    Community Coffee Hour - Live Stream
+  </text>
+</svg>

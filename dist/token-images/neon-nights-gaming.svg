@@ -1,0 +1,96 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Gaming studio -->
+  <defs>
+    <linearGradient id="studioGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f1419"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="200" fill="url(#studioGradient)"/>
+  
+  <!-- Gaming setup -->
+  <rect x="120" y="120" width="160" height="60" fill="#2C3E50"/>
+  <rect x="125" y="125" width="150" height="50" fill="#34495E"/>
+  
+  <!-- Multiple monitors -->
+  <rect x="140" y="80" width="50" height="35" fill="#000"/>
+  <rect x="200" y="80" width="50" height="35" fill="#000"/>
+  <rect x="260" y="80" width="50" height="35" fill="#000"/>
+  
+  <!-- Game content on screens -->
+  <rect x="142" y="82" width="46" height="31" fill="#8A2BE2"/>
+  <rect x="145" y="85" width="10" height="10" fill="#FF1493"/>
+  <rect x="160" y="90" width="15" height="8" fill="#00FFFF"/>
+  <rect x="150" y="100" width="20" height="6" fill="#FFFF00"/>
+  
+  <rect x="202" y="82" width="46" height="31" fill="#0F1419"/>
+  <rect x="205" y="85" width="40" height="25" fill="#FF1493"/>
+  <text x="210" y="100" font-family="monospace" font-size="8" fill="#00FFFF">NEON NIGHTS</text>
+  
+  <rect x="262" y="82" width="46" height="31" fill="#2C3E50"/>
+  <rect x="265" y="85" width="15" height="8" fill="#FFFF00"/>
+  <rect x="285" y="90" width="12" height="6" fill="#FF1493"/>
+  <rect x="270" y="100" width="25" height="4" fill="#00FFFF"/>
+  
+  <!-- Gaming chair -->
+  <rect x="180" y="140" width="40" height="40" fill="#2C3E50"/>
+  <rect x="185" y="145" width="30" height="30" fill="#34495E"/>
+  <rect x="195" y="135" width="10" height="15" fill="#2C3E50"/>
+  
+  <!-- Gamer/streamer -->
+  <circle cx="200" cy="100" r="12" fill="#4A4A4A"/>
+  <rect x="195" y="112" width="10" height="20" fill="#4A4A4A"/>
+  <rect x="185" y="120" width="8" height="15" fill="#4A4A4A" transform="rotate(-20 189 127)"/>
+  <rect x="207" y="120" width="8" height="15" fill="#4A4A4A" transform="rotate(20 211 127)"/>
+  
+  <!-- Gaming peripherals -->
+  <rect x="100" y="160" width="25" height="15" fill="#2C3E50"/>
+  <rect x="105" y="165" width="15" height="5" fill="#34495E"/>
+  
+  <rect x="320" y="155" width="15" height="20" fill="#2C3E50"/>
+  <circle cx="327" cy="165" r="3" fill="#FF1493"/>
+  <circle cx="327" cy="165" r="1" fill="#000"/>
+  
+  <!-- RGB lighting -->
+  <rect x="80" y="70" width="4" height="100" fill="#FF1493" opacity="0.6"/>
+  <rect x="316" y="70" width="4" height="100" fill="#00FFFF" opacity="0.6"/>
+  <rect x="120" y="60" width="160" height="4" fill="#8A2BE2" opacity="0.6"/>
+  <rect x="120" y="180" width="160" height="4" fill="#FFFF00" opacity="0.6"/>
+  
+  <!-- Streaming equipment -->
+  <rect x="50" y="90" width="20" height="30" fill="#2C3E50"/>
+  <circle cx="60" cy="105" r="8" fill="#000"/>
+  <circle cx="60" cy="105" r="4" fill="#FF0000"/>
+  
+  <rect x="330" y="100" width="30" height="15" fill="#2C3E50"/>
+  <rect x="335" y="105" width="20" height="5" fill="#34495E"/>
+  <circle cx="355" cy="107" r="2" fill="#FF0000"/>
+  
+  <!-- Chat/viewer interaction -->
+  <rect x="320" y="40" width="70" height="50" fill="rgba(0,0,0,0.8)"/>
+  <text x="325" y="50" font-family="monospace" font-size="6" fill="#00FFFF">CHAT</text>
+  <text x="325" y="58" font-family="monospace" font-size="5" fill="#FFFF00">Player1: epic gameplay!</text>
+  <text x="325" y="65" font-family="monospace" font-size="5" fill="#FF1493">Gamer99: beta access pls</text>
+  <text x="325" y="72" font-family="monospace" font-size="5" fill="#00FFFF">TokenHolder: love the stream</text>
+  <text x="325" y="79" font-family="monospace" font-size="5" fill="#8A2BE2">Pro_Player: nice moves</text>
+  
+  <!-- Live indicator -->
+  <rect x="50" y="40" width="80" height="25" fill="rgba(255,0,0,0.8)" rx="5"/>
+  <text x="60" y="50" font-family="Arial" font-size="10" fill="white" font-weight="bold">LIVE</text>
+  <text x="55" y="60" font-family="Arial" font-size="8" fill="white">Beta Gameplay</text>
+  
+  <!-- Viewer count -->
+  <circle cx="150" cy="180" r="3" fill="#FF0000"/>
+  <text x="158" y="185" font-family="Arial" font-size="8" fill="#E5E5E5">2,150 viewers</text>
+  
+  <!-- Text overlay -->
+  <rect x="0" y="0" width="400" height="50" fill="rgba(0,0,0,0.8)"/>
+  <text x="20" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#FF1493">
+    Neon Nights Gaming
+  </text>
+  <text x="20" y="40" font-family="Arial" font-size="12" fill="#E5E5E5">
+    Beta Gameplay Stream - Exclusive Preview
+  </text>
+</svg>

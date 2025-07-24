@@ -1,0 +1,393 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  
+  /* Advanced Glassmorphism Colors */
+  --dark: hsl(222, 84%, 3%);
+  --dark-secondary: hsl(210, 40%, 8%);
+  --electric: hsl(207, 90%, 54%);
+  --neon: hsl(142, 71%, 45%);
+  --purple: hsl(249, 58%, 64%);
+  --cyan: hsl(187, 85%, 53%);
+  --orange: hsl(25, 95%, 53%);
+  --pink: hsl(330, 85%, 60%);
+  
+  /* Glass Effects */
+  --glass-primary: rgba(255, 255, 255, 0.08);
+  --glass-secondary: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--dark);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Prevent horizontal scroll issues */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Responsive container fixes */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    background: var(--glass-primary);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+  }
+  
+  .glassmorphism-strong {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .glassmorphism-subtle {
+    background: var(--glass-secondary);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .gradient-border {
+    background: linear-gradient(45deg, var(--electric), var(--purple), var(--neon), var(--cyan));
+    padding: 2px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, var(--electric), var(--purple), var(--neon), var(--cyan));
+    border-radius: inherit;
+    opacity: 0.6;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  
+  .gradient-border-content {
+    background: var(--dark);
+    border-radius: 14px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .mesh-gradient {
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 0% 100%, rgba(251, 146, 60, 0.1) 0%, transparent 50%);
+  }
+  
+  .holographic {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 0, 150, 0.3),
+      rgba(0, 255, 255, 0.3),
+      rgba(255, 255, 0, 0.3),
+      rgba(255, 0, 150, 0.3)
+    );
+    background-size: 400% 400%;
+    animation: holographic 8s ease-in-out infinite;
+  }
+  
+  .neo-brutal {
+    box-shadow: 
+      8px 8px 0px rgba(59, 130, 246, 0.8),
+      16px 16px 0px rgba(168, 85, 247, 0.6),
+      24px 24px 0px rgba(34, 197, 94, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+  }
+  
+  .neo-brutal:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 
+      12px 12px 0px rgba(59, 130, 246, 0.9),
+      20px 20px 0px rgba(168, 85, 247, 0.7),
+      28px 28px 0px rgba(34, 197, 94, 0.5);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+  to { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4),
+                0 0 40px rgba(168, 85, 247, 0.2),
+                0 0 60px rgba(34, 197, 94, 0.1);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.8),
+                0 0 80px rgba(168, 85, 247, 0.4),
+                0 0 120px rgba(34, 197, 94, 0.2);
+  }
+}
+
+@keyframes matrix-rain {
+  0% { transform: translateY(-100vh); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes holographic {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes particle-float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  25% { 
+    transform: translateY(-30px) rotate(90deg);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: translateY(-60px) rotate(180deg);
+    opacity: 1;
+  }
+  75% { 
+    transform: translateY(-30px) rotate(270deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes data-stream {
+  0% { transform: translateX(-100px); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(calc(100vw + 100px)); opacity: 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-holographic {
+  animation: holographic 8s ease-in-out infinite;
+}
+
+.animate-particle-float {
+  animation: particle-float 12s linear infinite;
+}
+
+.animate-glitch {
+  animation: glitch 0.3s ease-in-out;
+}
+
+.animate-data-stream {
+  animation: data-stream 8s linear infinite;
+}
+
+/* Enhanced responsive design */
+@media (max-width: 640px) {
+  .glassmorphism-strong {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .glassmorphism-subtle {
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Better mobile typography */
+  h1 { 
+    line-height: 1.1; 
+    font-size: clamp(1.75rem, 8vw, 4rem);
+  }
+  h2 { 
+    line-height: 1.2; 
+    font-size: clamp(1.5rem, 6vw, 3rem);
+  }
+  h3 { 
+    line-height: 1.3; 
+    font-size: clamp(1.25rem, 5vw, 2rem);
+  }
+  
+  /* Mobile spacing improvements */
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Grid adjustments */
+  .grid {
+    gap: 0.5rem;
+  }
+}
+
+/* Mobile touch optimization */
+@media (hover: none) and (pointer: coarse) {
+  .neo-brutal:hover {
+    transform: none;
+  }
+  
+  .neo-brutal:active {
+    transform: translate(-1px, -1px);
+    box-shadow: 
+      3px 3px 0px rgba(0, 0, 0, 0.4),
+      0 0 15px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Increase touch targets */
+  button, a, .clickable {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 16px;
+  }
+  
+  /* Better mobile interactions */
+  input, textarea, select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Desktop enhancements */
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .glassmorphism-strong {
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+}

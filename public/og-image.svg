@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="bloomGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="50%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#ff00ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Glassmorphism background -->
+  <rect x="80" y="80" width="1040" height="470" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1" rx="20"/>
+  
+  <!-- Main Logo/Symbol -->
+  <circle cx="300" cy="315" r="80" fill="none" stroke="url(#bloomGradient)" stroke-width="3" filter="url(#glow)"/>
+  <path d="M300 235 C320 215, 360 235, 340 275 C360 255, 400 275, 380 315 C400 295, 380 335, 340 355 C360 375, 320 415, 300 395 C280 415, 240 375, 260 355 C220 375, 200 335, 220 315 C200 295, 220 255, 260 275 C240 235, 280 215, 300 235 Z" fill="url(#bloomGradient)" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="300" cy="315" r="12" fill="url(#bloomGradient)"/>
+  
+  <!-- Title -->
+  <text x="450" y="280" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="url(#bloomGradient)" filter="url(#glow)">
+    Bloompad
+  </text>
+  
+  <!-- Tagline -->
+  <text x="450" y="340" font-family="Inter, sans-serif" font-size="32" font-weight="600" fill="#ffffff" opacity="0.9">
+    Plant Your Idea. Bloom Your Brand.
+  </text>
+  
+  <!-- Description -->
+  <text x="450" y="390" font-family="Inter, sans-serif" font-size="24" font-weight="400" fill="#ffffff" opacity="0.7">
+    The first creator token launchpad designed for real communities.
+  </text>
+  <text x="450" y="420" font-family="Inter, sans-serif" font-size="24" font-weight="400" fill="#ffffff" opacity="0.7">
+    Coffee shops, artists, local businesses — launch your token in minutes.
+  </text>
+  
+  <!-- Bottom accent -->
+  <text x="450" y="480" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="url(#bloomGradient)" opacity="0.8">
+    Built on Base • bloompad.xyz
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="950" cy="150" r="40" fill="none" stroke="url(#bloomGradient)" stroke-width="2" opacity="0.3"/>
+  <circle cx="1050" cy="480" r="30" fill="none" stroke="url(#bloomGradient)" stroke-width="2" opacity="0.3"/>
+  <circle cx="150" cy="500" r="25" fill="none" stroke="url(#bloomGradient)" stroke-width="2" opacity="0.3"/>
+</svg>
